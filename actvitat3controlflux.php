@@ -23,15 +23,14 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Obtenir els tres números introduïts pel formulari
+       
         $num1 = $_POST['num1'];
         $num2 = $_POST['num2'];
         $num3 = $_POST['num3'];
 
-        // Trobar el número més gran
+      
         $max = max($num1, $num2, $num3);
 
-        // Mostrar el resultat
         echo "<p>El número més gran és: $max</p>";
     }
     ?>
