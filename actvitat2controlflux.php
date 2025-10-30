@@ -16,10 +16,9 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Obtenir el número introduït pel formulari
+ 
         $numero = $_POST['numero'];
 
-        // Comprovar si el número és parell o imparell
         if ($numero % 2 == 0) {
             echo "<p>El número $numero és parell.</p>";
         } else {
